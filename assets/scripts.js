@@ -5,7 +5,7 @@ $(document).ready(function() {
     var modifier = getModifier();
     var result = [];
     
-    $("#rollButton").on("click", function(){
+    $("#rollButton").on("click", function(event){
         event.preventDefault();
 
         getValues();
@@ -14,7 +14,7 @@ $(document).ready(function() {
         displayRolls();
     });
 
-    $(".options-button").on("click", function(){
+    $(".options-button").on("click", function(event){
         event.preventDefault();
         $(this).toggleClass("btn btn-active");
     })
@@ -42,10 +42,10 @@ $(document).ready(function() {
 
     function sumRolls() {
         if($("#sumOption").hasClass("btn-active")) {
-            var theSum = result.reduce(add, 0);
-            function add(a, b) {
+            function addArray(a, b) {
                 return a + b;
             }
+            var theSum = result.reduce(addArray, 0);
             result = [];
             result.push(theSum);
         }
