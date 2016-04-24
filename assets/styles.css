@@ -1,0 +1,37 @@
+.btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border: solid #000000 1px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #ffffff;
+  text-decoration: none;
+}
+
+.btn-active {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border: solid #000000 1px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #55d934;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn-active:hover {
+  background: #55d934;
+  text-decoration: none;
+}
+
+.options, .roll-results {
+  margin-top: 25px;
+}
